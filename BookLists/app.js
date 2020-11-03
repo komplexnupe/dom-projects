@@ -50,7 +50,7 @@ UI.prototype.clearFields = function () {
   document.getElementById('isbn').value = '';
 }
 
-// Event Listeners
+// Event Listeners for Add
 document.getElementById('book-form').addEventListener('submit',
   function (e) {
     e.preventDefault();
@@ -79,6 +79,10 @@ document.getElementById('book-form').addEventListener('submit',
       // Clear fields
       ui.clearFields();
     }
-
-
   });
+
+  // Event listeners for delete
+  document.getElementById('book-list').addEventListener('click', function(e){
+    e.preventDefault();
+    console.log('test');
+  })
