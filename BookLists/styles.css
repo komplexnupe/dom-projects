@@ -29,3 +29,7 @@
   color: white;
   background-color: darkcyan;
 }
+
+.delete {
+  color: red;
+}
