@@ -1,5 +1,10 @@
+// Instantiate local storage
+const storage = new Storage();
+// get storage location data
+const weatherLocation = storage.getLocationData();
+
 // Instantiate weather object
-const weather = new Weather('Charlotte','NC');
+const weather = new Weather(weatherLocation.city,weatherLocation.state);
 // Instantia
 const ui = new UI();
 // Get weather on DOM load
@@ -10,8 +15,10 @@ document.getElementById('w-changeBtn').addEventListener('click', (e) => {
   const city = document.getElementById('city').value;
   const state = document.getElementById('state').value;
 
-  weather.changeLocation('Miami, FL');
+  weather.changeLocation(city, state);
 
+  // Set location in LS
+storage.setLocationData(city,state);
   // Get weather and display
   getWeather();
 
