@@ -46,6 +46,7 @@ class UI {
     container.insertBefore(div, search);
   }
 
+  // Clear alert
   // Clear profile
   clearProfile() {
     this.profile.innerHTML = '';
