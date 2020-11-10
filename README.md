@@ -3,7 +3,7 @@ Vanilla JS DOM Manipulation Practice
 
 ### Github Finder
 This application allows users to search for Github profiles, returning the searched users profile, repositories, followers, and who they're following
-![]()
+![](assets/GithubFinder.gif)
 
 ### Weather App
 This weather application allows users to search the weather of any city, utilzing the openWeather API

@@ -48,6 +48,7 @@ class UI {
             <span class="badge badge-primary">Public Stars: ${repo.stargazers_count}</span>
             <span class="badge badge-info">Public Watchers: ${repo.watchers_count}</span>
             <span class="badge badge-warning">Public Forks: ${repo.forks_count}</span>
+            <span class="badge badge-success">Primary Language: ${repo.language}</span>
           </div>
         </div>
       </div>
